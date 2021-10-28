@@ -15,12 +15,14 @@
 <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
 <script>
-    const name = 'Josh Perez';
-    const hello = <h1>HELLO {name}</h1>;
-    ReactDOM.render(
-        hello,
-        document.getElementById('root')
-    );
+    window.onload = () => {
+        const name = 'Josh Perez';
+        const hello = <h1>HELLO {name}</h1>;
+        ReactDOM.render(
+            hello,
+            document.getElementById('root')
+        );
+    }
 </script>
 
 </body>
