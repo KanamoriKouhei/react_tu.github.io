@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReactTutorial</title>
+</head>
+
+<body>
+    <div id="like_button_container"></div>
+
     <!-- Load React. -->
     <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
@@ -13,10 +18,7 @@
         const domContainer = document.querySelector('#like_button_container');
         ReactDOM.render(e(LikeButton), domContainer);
     </script>
-</head>
 
-<body>
-    <div id="like_button_container"></div>
 </body>
 
 </html>
