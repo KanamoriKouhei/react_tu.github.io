@@ -16,12 +16,27 @@
 <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
 <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 <script type="text/babel">
-    const name = 'Josh Perez';
-    const hello = <h1>HELLO {name}</h1>;
-    ReactDOM.render(
-        hello,
-        document.getElementById('root')
+    function formatName(user) {
+        return user.firstName + ' ' + user.lastName;
+    }
+    const user = {
+        firstName:'Harper',
+        lastName:'Perez',
+    }
+    const elem = (
+        <h1>HELLO,{formatName(user)}</h1>
     );
+    const rootElem = document.getElementById('root');
+    ReactDOM.render(
+        elem,
+        rootElem
+    );
+    // const name = 'Josh Perez';
+    // const hello = <h1>HELLO {name}</h1>;
+    // ReactDOM.render(
+    //     hello,
+    //     document.getElementById('root')
+    // );
 </script>
 
 </body>
